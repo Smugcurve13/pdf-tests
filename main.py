@@ -13,7 +13,7 @@ for filepath in filepaths:
     pdf.set_font(family='Times',style='b',size=20)
     pdf.cell(w=50,h=8,txt=f"{filename.title()}",ln=1)
 
-    # Add body of file
+    # Add body of text
     pdf.set_font(family='Times',size=10)
     with open(filepath,'r') as file:
         pdf.multi_cell(w=180,h=8,txt=file.read())
